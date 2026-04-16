@@ -349,4 +349,4 @@ def method41(payload):
     return cmluautil_method(payload)
 if (__name__ == '__main__'):
     print(f'[*] Method: 41, Payload: python.exe')
-    method41("python.exe")
+    sys.exit(method41("python.exe"))
