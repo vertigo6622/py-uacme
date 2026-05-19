@@ -1,5 +1,14 @@
-# py-uacme
-the UACME project is a well-known open-source UAC bypass kit found on github. many of the methods contained within are non-functional on the latest windows 11 version, however, both **method 41 (ucmCMLuaUtilShellExecMethod)** and **method 59 (ucmDebugObjectMethod)** are still functional, and spawn an admin shell without any detection by windows defender.
+<d>py-uacme</d>
+<br/>
+<sup>undetected privesc</sup>
+<br/>
+<a href="https://deepwiki.com/vertigo6622/py-uacme"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a>
+
+---
+
+the UACME project is a well-known open-source UAC bypass kit found on [github](https://github.com/hfiref0x/UACME). 
+
+many of the methods contained within are non-functional on the latest windows 11 version, however, both **method 41 (ucmCMLuaUtilShellExecMethod)** and **method 59 (ucmDebugObjectMethod)** are still functional, and spawn an admin shell without any detection by windows defender.
 
 despite this, the `akagi.exe` compiled which has these methods has long been signatured by microsoft and is now immediately removed from the disk upon detection. i have ported both these methods into python, where they are run by `python.exe` and execute successfully. this has been tested to still be fully working on **windows 11 24h2.** 
 
